@@ -1,0 +1,46 @@
+.songs-container{
+    min-height: 60vh;
+    // background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        padding: 3rem 1rem 1rem 1rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    img{
+        width: 25%;
+        border-radius: 50%;
+        transition: all 2s ease; 
+    }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotateSong {
+    animation: rotate 20s linear forwards infinite;
+  }
+.song-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: maroon;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_960_720.jpg');
+    h1{
+        color:whitesmoke;
+    }
+}
