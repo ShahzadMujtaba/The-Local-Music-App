@@ -1,0 +1,24 @@
+nav{
+    min-height: 10vh;
+    display: flex;
+    // background-color: deeppink;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5rem;
+    h1{
+        color: royalblue;
+    }
+    button{
+        background: transparent;
+        // border: none;
+        cursor: pointer;
+        border: 2px solid royalblue;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+        font-weight: 700;
+        &:hover{
+            background: rgba(142, 177, 241, 0.76);
+            color: white;
+        }
+    }
+}

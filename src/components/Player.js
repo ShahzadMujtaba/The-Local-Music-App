@@ -48,7 +48,7 @@ const [songInfo,setSongInfo] =  useState({currentTime:0,duration:0})
                  <input
                    onChange={slideHandler} 
                    min={0}
-                   max={songInfo.duration} 
+                   max={songInfo.duration||0} 
                    value={songInfo.currentTime} 
                    type="range"/>
                  <p>{getTime(songInfo.duration)}</p>

@@ -7,6 +7,9 @@
     background-color: white;
     box-shadow: 2px 2px 50px gray;
     overflow: scroll;
+    transform: translateX(-100% );
+    transition: all 0.5s ease;
+    opacity: 0;
     
     h2{
         padding: 2rem;
@@ -22,7 +25,7 @@
         width: 30%;
     }
     &:hover{
-        background-color:cornflowerblue;
+        background-color:rgba(142, 177, 241, 0.76);
     }
 }
 
@@ -34,6 +37,14 @@
     h4{
         font-size: 0.7rem;
     }
+}
+
+.selected{
+    background-color: rgb(127, 169, 247);;
+}
+.active-library{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 *{
